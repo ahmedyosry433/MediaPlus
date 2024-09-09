@@ -1,7 +1,7 @@
 {
-  "name": "mediapluse",
+  "name": "trillo",
   "version": "1.0.0",
-  "description": "Media Pluse App",
+  "description": "Trillo app",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -15,12 +15,15 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/ahmedyosry433/Natours-HTML-CSS.git"
   },
   "author": "Ahmed",
   "license": "ISC",
   "bugs": {
+    "url": "https://github.com/ahmedyosry433/Natours-HTML-CSS/issues"
   },
+  "homepage": "https://github.com/ahmedyosry433/Natours-HTML-CSS#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "concat": "^1.0.3",

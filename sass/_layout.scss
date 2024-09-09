@@ -1,0 +1,24 @@
+.containar {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto
+}
+.toolbar {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+.main-nav {
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    
+}
