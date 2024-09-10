@@ -29,9 +29,14 @@
 .cards {
   display: flex;
   margin-top: -13rem;
+  padding-bottom: 10rem;
   position: relative;
   z-index: 1;
   justify-content: space-evenly; }
+
+.features {
+  margin: 0 10rem;
+  margin-bottom: 10rem; }
 
 .toolbar__nav, .toolbar__contact {
   display: flex;
@@ -202,7 +207,7 @@ input:checked ~ .slides {
     text-decoration: none;
     border: 0;
     padding-bottom: 0.5rem;
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
   .btn-line::before {
     content: "";
     position: absolute;
@@ -210,7 +215,7 @@ input:checked ~ .slides {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--blue);
+    background-color: var(--white);
     transition: all 0.3s ease; }
   .btn-line:hover::before {
     width: 100%; }
@@ -218,12 +223,12 @@ input:checked ~ .slides {
 .card {
   color: black;
   width: 25%;
-  background-color: blue;
+  background-color: var(--blue);
   color: var(--white);
   border-radius: 8px;
   padding: 3rem;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -234,6 +239,57 @@ input:checked ~ .slides {
     margin-top: 1.3rem; }
   .card p {
     line-height: 1.9; }
+  .card:hover {
+    box-shadow: 0 1rem 1.7rem var(--blue);
+    transform: translateY(-5px); }
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 1rem; }
+  .feature__single {
+    width: 33.33333%;
+    text-align: center;
+    position: relative; }
+    .feature__single:not(:last-child) {
+      margin-right: 2rem; }
+      .feature__single:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        right: -7rem;
+        top: 6rem;
+        width: 10.2rem;
+        border-bottom: 3px dotted var(--blue); }
+    .feature__single > h3 {
+      padding: 3rem 0;
+      color: #2C2D3F;
+      font-weight: 600;
+      font-size: 21px; }
+    .feature__single > img {
+      border-radius: 50%;
+      width: 10rem;
+      height: 10rem; }
+
+.head__title {
+  text-align: center;
+  padding: 0 25rem;
+  margin-bottom: 60px; }
+  .head__title-image {
+    height: auto;
+    max-width: 100%; }
+
+.header-primary {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 2.4rem;
+  color: var(--black); }
+
+.header-secondary {
+  font-size: 15px;
+  color: var(--gray);
+  margin-top: 15px; }
 
 :root {
   --black: #2C2D3F;
