@@ -91,7 +91,6 @@
     &-white {
         background-color: var(--white);
         color: var(--blue);
-
     }
 
     &::before {
@@ -644,11 +643,21 @@ input:checked ~ .slides {
         font-weight: 600;
     }
 
+    &-btn {
+        display: flex;
+        justify-content: center;   
+        
+        & > a {
+            text-transform: capitalize;
+            padding:1rem 10rem;
+        }
+
+    }
 
     &__list {
        
         display: flex;
-        margin-top: 2rem;
+        margin: 2rem 0;
         
         &__items {
             list-style: none;
@@ -659,15 +668,17 @@ input:checked ~ .slides {
                 text-transform: capitalize;
                 & > img {
                     height: 1.6rem;
+                    margin-left: 3.2rem;
 
                 }
 
                 &:not(:last-child ){
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.8rem;
                 }
             }
         }
         
+    
     }
    
 }

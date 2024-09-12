@@ -99,7 +99,6 @@
   padding-bottom: 15rem; }
 
 .pricing-table {
-  height: 200vh;
   background: #f9f9f9;
   padding: 10rem 0; }
 
@@ -532,9 +531,15 @@ input:checked ~ .slides {
     color: var(--blue);
     font-size: 3.6rem;
     font-weight: 600; }
+  .table-btn {
+    display: flex;
+    justify-content: center; }
+    .table-btn > a {
+      text-transform: capitalize;
+      padding: 1rem 10rem; }
   .table__list {
     display: flex;
-    margin-top: 2rem; }
+    margin: 2rem 0; }
     .table__list__items {
       list-style: none;
       text-align: start; }
@@ -543,9 +548,10 @@ input:checked ~ .slides {
         justify-content: space-between;
         text-transform: capitalize; }
         .table__list__items-item > img {
-          height: 1.6rem; }
+          height: 1.6rem;
+          margin-left: 3.2rem; }
         .table__list__items-item:not(:last-child) {
-          margin-bottom: 1rem; }
+          margin-bottom: 1.8rem; }
 
 :root {
   --black: #2C2D3F;
