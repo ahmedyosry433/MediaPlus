@@ -1,5 +1,5 @@
 .containar {
-    width: 100%;
+    width: 82%;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     margin-right: auto;
@@ -32,14 +32,13 @@
 .cards {
     display: flex;
     margin-top: -13rem;
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
     position: relative;
     z-index: 1;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .features {
-    margin: 0 10rem ;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .fun-facts {
@@ -49,7 +48,7 @@
     background-position: center; 
     background-repeat: no-repeat;
     color: white;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -69,12 +68,57 @@
    
 }
 
-.services {
+.who-are-we {
     display: flex;
     flex-direction: column;
-    margin: 0 10rem;
+    margin-bottom: 15rem;
     
 }
 .who-we {
     display: flex;
+}
+
+.contact {
+    height: 80vh;
+    background-image: url(../img/call-bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#1a76d1,0.8 );
+
+    }
+    
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    margin-bottom: 15rem;
+}
+
+.services {
+    padding-bottom: 15rem;
+}
+
+.pricing-table {
+    height: 200vh;
+    background: #f9f9f9;
+    padding: 10rem 0;
 }
