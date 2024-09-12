@@ -814,3 +814,37 @@ input:checked ~ .slides {
     }
 }
 
+/////////////////////////////////////////////////
+/// Signup New
+.contant {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        width: 45%;
+
+        & > h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #2C2D3F;
+            font-weight: 500;
+        }
+    }
+
+    &__subscribe .form-group {
+        
+        & > input {
+            background-color: var(--white);
+            border-radius: 3px;
+            height: 6rem;
+        }
+        & > button {
+            width: 18rem;
+            height: 6rem;
+            font-size: 1.3rem;
+        font-weight: 500;
+        }
+    }
+}

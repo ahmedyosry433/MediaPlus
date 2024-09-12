@@ -136,6 +136,11 @@
       width: 15rem;
       z-index: 4; }
 
+.signup-new {
+  height: 50vh;
+  background-color: #EDF2FF;
+  display: flex; }
+
 .toolbar__nav, .toolbar__contact {
   display: flex;
   list-style: none; }
@@ -673,6 +678,28 @@ input:checked ~ .slides {
   .form-submit > button {
     padding: 1rem 2rem;
     border-radius: 3px; }
+
+.contant {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .contant__text {
+    width: 45%; }
+    .contant__text > h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #2C2D3F;
+      font-weight: 500; }
+  .contant__subscribe .form-group > input {
+    background-color: var(--white);
+    border-radius: 3px;
+    height: 6rem; }
+  .contant__subscribe .form-group > button {
+    width: 18rem;
+    height: 6rem;
+    font-size: 1.3rem;
+    font-weight: 500; }
 
 :root {
   --black: #2C2D3F;
