@@ -194,7 +194,9 @@
   border-radius: 8px;
   z-index: 1;
   overflow: hidden;
-  transition: color 0.3s ease; }
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+  border: none; }
   .btn-white {
     background-color: var(--white);
     color: var(--blue); }
@@ -627,6 +629,50 @@ input:checked ~ .slides {
       font-size: 13px;
       letter-spacing: 0px;
       line-height: 23px; }
+
+.appointment__content {
+  display: flex;
+  justify-content: space-between; }
+
+.appointment__form {
+  width: 100%; }
+  .appointment__form-input {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #eee;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    text-transform: capitalize;
+    border-radius: 4px;
+    padding: 1.8rem 1.8rem;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400; }
+    .appointment__form-input:focus {
+      outline: none;
+      border-color: var(--blue); }
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem; }
+  .form-group > textarea {
+    width: 100%;
+    height: 200px;
+    padding: 18px;
+    border: 1px solid #eee;
+    text-transform: capitalize;
+    resize: none;
+    border-radius: 4px;
+    font-family: inherit; }
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .form-submit > button {
+    padding: 1rem 2rem;
+    border-radius: 3px; }
 
 :root {
   --black: #2C2D3F;
