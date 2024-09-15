@@ -74,9 +74,15 @@
   position: relative;
   z-index: 1;
   justify-content: space-between; }
+  @media only screen and (max-width: 75em) {
+    .cards {
+      padding-bottom: 10rem; } }
 
 .features {
   margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .features {
+      margin-bottom: 10rem; } }
 
 .fun-facts {
   height: 50vh;
@@ -91,6 +97,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .fun-facts {
+      margin-bottom: 10rem; } }
   .fun-facts::before {
     content: "";
     position: absolute;
@@ -104,6 +113,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .who-are-we {
+      margin-bottom: 10rem; } }
 
 .who-we {
   display: flex; }
@@ -121,6 +133,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .contact {
+      margin-bottom: 10rem; } }
   .contact::before {
     content: "";
     position: absolute;
@@ -135,17 +150,30 @@
   flex-direction: column;
   margin: 0 2rem;
   margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .portfolio {
+      margin-bottom: 10rem; } }
 
 .services {
-  padding-bottom: 15rem; }
+  margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .services {
+      margin-bottom: 10rem; } }
 
 .pricing-table {
   margin-bottom: 15rem;
   background: #f9f9f9;
   padding: 10rem 0; }
+  @media only screen and (max-width: 75em) {
+    .pricing-table {
+      padding: 7rem 0;
+      margin-bottom: 10rem; } }
 
 .blog {
   margin-bottom: 15rem; }
+  @media only screen and (max-width: 75em) {
+    .blog {
+      margin-bottom: 10rem; } }
 
 .clients {
   height: 40vh;
@@ -160,6 +188,9 @@
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .clients {
+      margin-bottom: 10rem; } }
   .clients::before {
     content: "";
     position: absolute;
@@ -523,6 +554,9 @@ input:checked ~ .slides {
     color: var(--black);
     position: relative;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .who-we__text > h2 {
+        margin-bottom: 1.5rem; } }
     .who-we__text > h2::before {
       content: "";
       position: absolute;
@@ -533,14 +567,24 @@ input:checked ~ .slides {
       background-color: var(--blue); }
   .who-we__text > p {
     margin: 3.5rem 0; }
+    @media only screen and (max-width: 75em) {
+      .who-we__text > p {
+        margin: 2rem 0;
+        font-size: 1.4rem; } }
 
 .list {
   display: flex;
   gap: 10rem;
   margin-left: 2.5rem; }
+  @media only screen and (max-width: 75em) {
+    .list {
+      gap: 5rem; } }
   .list__items-item {
     list-style: none;
     position: relative; }
+    @media only screen and (max-width: 75em) {
+      .list__items-item {
+        font-size: 1.4rem; } }
     .list__items-item--arrow {
       width: 1.2rem;
       height: 0.5rem;
@@ -576,11 +620,17 @@ input:checked ~ .slides {
   text-align: center;
   width: 45%;
   z-index: 3; }
+  @media only screen and (max-width: 75em) {
+    .contact__title {
+      width: 50%; } }
   .contact__title > h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 600;
     line-height: 46px;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 75em) {
+      .contact__title > h2 {
+        font-size: 2.5rem; } }
 
 .contact__btn {
   width: 30%;
@@ -632,15 +682,24 @@ input:checked ~ .slides {
   gap: 2rem; }
   .service > img {
     height: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .service > img {
+        height: 4rem; } }
   .service__text > a {
     text-decoration: none;
     color: var(--black);
     font-weight: 600;
     font-size: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .service__text > a {
+        font-size: 1.8rem; } }
   .service__text > p {
     margin-top: 1.5rem;
     font-size: 1.5rem;
     line-height: 1.8; }
+    @media only screen and (max-width: 75em) {
+      .service__text > p {
+        font-size: 1.3rem; } }
 
 .table {
   background-color: var(--white);
@@ -668,6 +727,9 @@ input:checked ~ .slides {
     .table-btn > a {
       text-transform: capitalize;
       padding: 1rem 10rem; }
+      @media only screen and (max-width: 75em) {
+        .table-btn > a {
+          padding: 1rem 8rem; } }
   .table__list {
     display: flex;
     margin: 2rem 0; }
@@ -678,6 +740,9 @@ input:checked ~ .slides {
         display: flex;
         justify-content: space-between;
         text-transform: capitalize; }
+        @media only screen and (max-width: 75em) {
+          .table__list__items-item {
+            font-size: 1.3rem; } }
         .table__list__items-item > img {
           height: 1.6rem;
           margin-left: 3.2rem; }
@@ -710,11 +775,17 @@ input:checked ~ .slides {
       background-color: var(--blue);
       border-radius: 4px;
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 75em) {
+        .blog__card-content--date {
+          font-size: 1.3rem; } }
     .blog__card-content > h2 {
       font-size: 1.8rem;
       font-weight: 500;
       margin-bottom: 1.5rem;
       line-height: 24px; }
+      @media only screen and (max-width: 75em) {
+        .blog__card-content > h2 {
+          font-size: 1.6rem; } }
       .blog__card-content > h2 > a {
         text-decoration: none;
         color: var(--black); }

@@ -486,6 +486,10 @@ input:checked ~ .slides {
         color: var(--black);
         position: relative;
         margin-bottom: 3rem;
+        @include respond (tab-land){
+            margin-bottom: 1.5rem;
+
+        }
 
         &::before {    
             content: "";
@@ -502,7 +506,12 @@ input:checked ~ .slides {
 
     & > p {
         margin: 3.5rem 0;
-        
+        @include respond (tab-land){
+            margin: 2rem 0;
+            font-size: 1.4rem;
+
+
+        }
     }
 }
 
@@ -511,11 +520,18 @@ input:checked ~ .slides {
     display: flex;
     gap: 10rem;
     margin-left: 2.5rem;
+    @include respond (tab-land){
+        gap: 5rem;
+    }
     &__items {
         
         &-item {
             list-style: none;  
             position: relative;
+            @include respond (tab-land){
+               font-size: 1.4rem;
+    
+            }
 
             &--arrow {
                 width: 1.2rem;
@@ -573,12 +589,21 @@ input:checked ~ .slides {
         text-align: center;
         width: 45%;
         z-index: 3;
+        @include respond (tab-land){
+            width: 50%;
+
+        }
+
 
         & > h2 {
-            font-size: 32px;
+            font-size: 3.2rem;
             font-weight: 600;
             line-height: 46px;
             margin-bottom: 3rem;
+            @include respond (tab-land){
+                font-size: 2.5rem;
+
+            }
         }
     }
 
@@ -658,6 +683,11 @@ input:checked ~ .slides {
 
     & > img {
         height: 6rem;
+        @include respond (tab-land){
+            height: 4rem;
+            
+        }
+
     }
 
 
@@ -668,11 +698,21 @@ input:checked ~ .slides {
             color: var(--black);
             font-weight: 600;
             font-size: 2rem;
+            @include respond (tab-land){
+                font-size: 1.8rem;
+            
+            }
+    
         }
         & > p {
             margin-top: 1.5rem;
             font-size: 1.5rem;
             line-height: 1.8;
+            @include respond (tab-land){
+                
+                font-size: 1.3rem;
+            }
+    
         }
     }
 }
@@ -714,6 +754,11 @@ input:checked ~ .slides {
         & > a {
             text-transform: capitalize;
             padding:1rem 10rem;
+            @include respond (tab-land){
+                
+                padding:1rem 8rem;
+            }
+    
         }
 
     }
@@ -730,6 +775,10 @@ input:checked ~ .slides {
                 display: flex;
                 justify-content: space-between;
                 text-transform: capitalize;
+                @include respond (tab-land){
+                    font-size: 1.3rem;
+                }
+        
                 & > img {
                     height: 1.6rem;
                     margin-left: 3.2rem;
@@ -784,6 +833,10 @@ input:checked ~ .slides {
             background-color: var(--blue);
             border-radius: 4px;
             margin-bottom: 2rem;
+            @include respond (tab-land){
+                font-size: 1.3rem;
+            }
+    
         }
 
         & > h2{
@@ -791,6 +844,11 @@ input:checked ~ .slides {
             font-weight: 500;
             margin-bottom: 1.5rem;
             line-height: 24px;
+            @include respond (tab-land){
+                font-size: 1.6rem;
+            
+            }
+    
             & > a {
                     text-decoration: none;
                     color: var(--black);
